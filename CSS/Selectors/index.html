@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectors</title>
+    <style>
+        /* Universal Selctor  (*) */
+        *{
+            /* border: 1px solid red; */
+
+        }
+
+        /* Element Selector/Tag Selector */
+        /* p{
+            color: red;
+        } */
+
+        /* id selector (fastest selectors) #idName */
+
+         #demo{
+            color: rgb(67, 249, 6);
+            /* background-color: black; */
+         }
+
+         /* class Selector  (.className) */
+         .newclass{
+            color: blue;
+            /* background-color: black; */
+         }
+
+         /* Group Selector  (,)*/
+         #demo,.newclass{
+            background-color: black;
+         }
+
+       /* Descendent Selector( grandparent parent child) */
+      /* section div  span{
+            color:red;
+         } */
+
+         /* Child Combinator grandpatent>parent>child */
+         /* section>div>span{
+            color: blue;
+         } */
+
+
+
+
+   /* Attribute Selector  tagName[attrName="Value"]*/
+         input[type="password"],input[type="email"]{
+            background-color: yellow;
+         }
+         input[type="email"]{
+            background-color: rgb(15, 221, 67);
+         }
+
+         /* a[href="www.com"]{
+            color: red;
+         } */
+
+         /* without value using only attr name */
+         a[target]{
+            color: red;
+         }
+
+
+
+    </style>
+</head>
+<body>
+    <p class="newclass">Lorem ipsum dolor sit amet.</p>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p id="demo" class="newclass">Lorem ipsum dolor sit amet.</p>
+    <p class="newclass">Lorem ipsum dolor sit amet.</p>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p class="newclass">Lorem ipsum dolor sit amet.</p>
+
+
+    <section>
+        <div>
+            <p><span>Inside section</span></p>
+        </div>
+    </section>
+
+    <section>
+        <div>
+           <span>Inside section</span>
+           <span>Inside section</span>
+           <span>Inside section</span>
+        </div>
+    </section>
+
+    <form action="">
+        <input type="text">
+        <input type="password">
+        <input type="email">
+        <input type="tel">
+    </form>
+
+    <a href="" target="_blank">click1</a>
+    <a href="www.com" target="_blank">click2</a>
+
+    
+
+
+
+    <!-- create 10 paragraphs
+    1) select 3rd para using id selector and apply color red to that para
+    2) select 1st,4th,6th 10th para using class selector and apply color green to that paragraphs
+    3)use group selctor and  apply background color black to above selected id and class
+    
+    create one span using below nesting
+    <section>
+        <div>
+            <p>
+                <span></span>
+            </p>
+        </div>
+    </section>
+        1)apply violet color to span using descendent selctor and child Combinator
+        
+
+        1)add 5 inputs tags and apply background color to each using attribute Selector
+        2)create  5 anchor tags and apply color to them using href attribute 
+
+        1)apply border to whole document  using universal Selector
+        2)create 10 italic tags and apply pink color to them using element/tag selector -->
+    </section>
+</body>
+</html>
