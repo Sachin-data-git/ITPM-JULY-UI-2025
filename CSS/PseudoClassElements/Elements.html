@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1::before {
+            content: "Hello ";
+            color: red;
+        }
+
+        h1::after {
+            content: " User ";
+            color: red;
+        }
+
+        h1 {
+            color: blue;
+        }
+
+        p::first-line {
+            color: red;
+            background-color: yellow;
+        }
+
+        p::first-letter {
+            font-size: 40px;
+            color: rgb(48, 8, 230);
+        }
+
+        input::placeholder {
+            color: rebeccapurple;
+        }
+
+        span::selection {
+            color: red;
+            background-color: yellow;
+
+        }
+
+        span {
+            /* user-select: auto; */
+            /* user-select: all; */
+            user-select: none;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Welcome</h1>
+
+    <p>BLorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit, officiis blanditiis similique et id esse ea
+        autem, a accusamus ipsum nulla est numquam molestias qui illo. Ratione iusto architecto consequatur.
+        Officiis eveniet ea rem cumque illum ab neque. Est voluptates quis quidem alias ad maiores hic, doloremque
+        molestias fugit natus ipsa magnam omnis tempora consequuntur inventore numquam, sit blanditiis excepturi.
+        Amet repellat inventore cum quae possimus totam dolore hic aliquid voluptatum voluptatem perspiciatis omnis
+        sequi dolorum nostrum, ipsam expedita, temporibus cupiditate quasi numquam eius quaerat blanditiis fugit!
+        Itaque, doloribus. Possimus!
+        Officia recusandae error nihil repellat, natus laboriosam quam sed? Aspernatur, voluptates quibusdam dignissimos
+        dolores porro nulla veritatis ex libero distinctio velit, iusto sequi quae iure enim. Minima doloremque quae
+        illo?
+        Vel veritatis, voluptatem voluptatum quas explicabo laboriosam eos sequi repudiandae eligendi cumque saepe
+        dignissimos? Nulla iste aperiam sint eius culpa quidem mollitia ipsum tempora fuga placeat quas qui, fugit et!
+    </p>
+
+
+    <input type="text" placeholder="enter name" name="" id="">
+    <hr><br>
+    <span>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis earum omnis facere voluptas doloremque
+        vel culpa iure sed, quis harum sapiente, necessitatibus nesciunt accusamus recusandae. Perferendis animi
+        recusandae placeat dolores.</span>
+
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis aliquam eos, modi neque velit dolorum
+        architecto, culpa aperiam quas repudiandae impedit fuga ratione totam eum voluptatibus assumenda atque nobis
+        deleniti!</p>
+</body>
+
+</html>

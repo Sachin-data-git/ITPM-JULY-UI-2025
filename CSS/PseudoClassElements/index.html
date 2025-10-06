@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        #an1:visited{
+             color: yellow; 
+        }
+
+        #an2:hover{
+            color: red;
+            background-color: yellow;
+        }
+
+        p:hover{
+            color: red;
+        }
+
+        img:hover{
+            border: 2px solid red;
+        }
+
+        #an3:active{
+            font-size: 40px;
+            color: orange;
+        }
+
+        /* #an4:link{
+            color: red !important;
+        } */
+
+
+        #inp1:focus{
+            background-color: yellow;
+            color: red;
+        }
+        #inp2:disabled{
+            background-color: rebeccapurple;
+        }
+
+        #inp3:checked{
+            height: 100px;
+            width: 100px;
+        }
+
+        #inp4:required{
+            border: 1px solid red;
+        }
+        #inp5:read-only{
+            color: blue;
+        }
+
+        #inp6:invalid{
+            color: red;
+        }
+        #inp6:valid{
+            color: rgb(71, 233, 7);
+        }
+        
+
+        li:first-child{
+            background-color: red;
+        }
+        li:last-child{
+            background-color: rgb(7, 243, 7);
+        }
+        
+        li:nth-child(3){
+            background-color: rgb(9, 31, 226);
+        }
+        li:empty{
+            background-color: aquamarine;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- LINK RELATED PSEUDO CLASS -->
+    <a href="#####" id="an1">Visited</a>
+    <a href="######" id="an2">Hover</a>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <img src="https://images.pexels.com/photos/33435611/pexels-photo-33435611.jpeg" height="200" width="200" alt="">
+    
+    <a href="######" id="an3">Active</a>
+    <a href="######" id="an4">link</a>
+
+
+    <hr>
+    <br>
+    <!-- INPUT RELATED PSEUDO CLASS -->
+     <form action="">
+        <input type="text" id="inp1">
+        <input type="text" id="inp2" value="demo" disabled>
+
+        <input type="checkbox"  id="inp3" checked>
+        <input type="text"  id="inp4" required >
+        <input type="text"  id="inp5" readonly value="Demo" >
+
+        <input type="email" id="inp6" placeholder="Enter Placeholder">
+        <input type="submit">
+     </form>
+
+
+     <hr><br>
+     <!-- Position/Number Related Pseudo Class -->
+
+     <ul>
+        <li>NewItemf</li>
+        <li>NewItem</li>
+        <li>Item</li>
+        <li>Item</li>
+        <li></li>
+        <li>Item</li>
+        <li>Item</li>
+        <li>Item</li>
+        <li></li>
+        <li>Item</li>
+        <li>Item</li>
+        <li>Item</li>
+        <li>Item</li>
+        <li></li>
+        <li>Item</li>
+        <li>Item</li>
+        <li>Item</li>
+        <li>LastItem</li>
+     </ul>
+</body>
+</html>
