@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model</title>
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+
+        }
+        div{
+            height: 100px;
+            width: 100px;
+            padding: 10px;
+            border: 2px solid red;
+            /* margin: 0px auto; */
+            margin: 50px;
+
+           /* height= 100+4+20=124 */
+           /* width= 100+4+20=124 */
+           /* box-sizing: content-box; */
+        }
+    </style>
+</head>
+<body>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor esse maxime optio consequuntur vitae a exercitationem sint consequatur saepe! Maxime necessitatibus labore similique amet, perspiciatis aliquam consectetur asperiores? Non, exercitationem.</p>
+    <div>
+        content
+    </div>
+
+
+    <div>
+        height=100px
+        width=100px
+        border=2px
+        padding=20px
+        margin=50px
+
+        calculation= height=144 width=144px
+    </div>
+    
+
+    <!-- use border
+    use padding
+    use margin -->
+
+    <!-- create 5 divs and add dimension in that after adding css without  -->
+    <!-- create 5 divs and add dimension in that after adding box sizing: border-box  -->
+</body>
+</html>
