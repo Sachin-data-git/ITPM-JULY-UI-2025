@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            height: 100px;
+            width: 100px;
+            background-color: red;
+            /* It hides the elements as well as dimensions */
+            /* display: none; */
+            /* It hides the elements only dimensions remains as it it */
+            opacity: 0;
+        }
+    </style>
+</head>
+<body>
+     <div>data</div>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate porro dolorum molestias pariatur impedit similique, perspiciatis excepturi cumque vitae nostrum, esse ab deleniti mollitia iure consequatur in odio aperiam repudiandae.</p>
+
+      <button onclick="demo()">hide</button>
+      <button onclick="demo1()">show</button>
+
+      <script>
+      function demo(){
+        document.querySelector("p").style.display="none";
+      }
+      function demo1(){
+        document.querySelector("p").style.display="block";
+      }
+      </script>
+
+
+
+    <!-- Task -->
+
+        <!-- 1)add 5 block level elements and convert them into inline -->
+        <!-- 3)add 5 inline  elements and convert them into block level -->
+        <!-- 3)add 4 div and add dimension on that div as well as add border and add that elemnts side by side using inline block -->
+         <!-- 4) show the diffrence between display:none and opacity:0 -->
+         
+
+</body>
+</html>
