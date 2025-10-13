@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        #container,#parent,#parent-1{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+        }
+        #parent{
+            height:200px ;
+            align-items: center;
+        }
+        .items{
+            width: 23%;
+            border: 1px solid red;
+            height: 200px;
+        }
+        .child{
+            width: 47%;
+            border: 1px solid green;
+            height: 70px;
+        }
+        .child-1{
+            width: 23%;
+            border: 1px solid;
+        }
+        #parent-1{
+            height: 60px;
+            align-items: center;
+        }
+
+
+    </style>
+</head>
+<body>
+    <section id="container">
+        <div class="items">1</div>
+        <div class="items">
+            <div id="parent">
+                <div class="child">2.1</div>
+                <div class="child">
+                    <div id="parent-1">
+                        <div class="child-1">2.2.1</div>
+                        <div class="child-1">2.2.2</div>
+                        <div class="child-1">2.2.3</div>
+                        <div class="child-1">2.2.4</div>
+                    </div>
+                </div>
+                <div class="child">2.3</div>
+                <div class="child">2.4</div>
+            </div>
+        </div>
+        <div class="items">3</div>
+        <div class="items">4</div>
+    </section>
+
+
+    <section>
+        <div>
+            <div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+        <div>
+             <div>
+                <div></div>
+                <div>
+                    <div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                </div>
+                <div></div>
+             </div>
+        </div>
+    </section>
+</body>
+</html>
