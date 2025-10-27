@@ -1,0 +1,143 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#container{
+    width: 100%;
+    border: 1px solid red;
+}
+header{
+    background-color: orangered;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+header div{
+    width: 47%;
+}
+header div img{
+    width: 100%;
+}
+#navbar,#icons{
+    display: none;
+}
+
+#herosection{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: orangered;
+}
+.hero_child{
+    width: 100%;
+    margin: 10px;
+}
+.hero_child img{
+    width: 80%;
+}
+
+#programs{
+    display: flex;
+    flex-wrap: wrap;
+}
+#uniqp{
+    width: 100%;
+    text-align: center;
+}
+
+.program_child{
+    width: 100%;
+    margin: 10px;
+    border: 1px solid blue;
+    box-shadow: 10px 10px 10px gray;
+    border-radius: 20px;
+    padding: 50px 0px;
+}
+
+#core, .core_child_parent{
+    display: flex;
+    flex-wrap: wrap;
+}
+.core_child{
+    width: 100%;
+}
+#uniqc{
+    width: 100%;
+    text-align: center;
+}
+.core_child_parent_img{
+    width: 47%;
+}
+.core_child_parent_img img{
+    width: 100%;
+}
+.core_child_parent_txt{
+    width: 47%;
+}
+#classes{
+     display: flex;
+    flex-wrap: wrap;
+}
+#uniqcl{
+    width: 100%;
+    text-align: center;
+}
+.classes_child{
+    width: 100%;
+    margin: 10px;
+    border: 1px solid;
+}
+.classes_child img{
+    width: 100%;
+   
+}
+#smarty,#smarty_child_parent,footer{
+     display: flex;
+    flex-wrap: wrap;
+}
+.smarty_child{
+    width: 100%;
+    margin: 10px;
+}
+.smarty_subchild{
+    width: 80%;
+    border: 1px solid;
+    margin: 10px;
+}
+.list{
+    width: 100%;
+    margin: 10px;
+}
+#ftuniq{
+    width: 100%;text-align: center;
+}
+
+@media only screen and (min-width:768px){
+    #menubar{
+        text-align: right;
+    }
+    .hero_child{
+    width: 60%;
+    text-align: center;
+}
+.program_child{
+    width: 47%;
+   
+}
+.core_child{
+    width: 47%;
+}
+.classes_child{
+    width: 47%;
+}
+.smarty_child{
+    width: 47%;
+  
+}
+.list{
+    width: 47%;
+    margin: 10px;
+}
+}

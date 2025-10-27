@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        #container{
+            border: 4px solid red;
+            height: 500px;
+            /* width: 500px; */
+            display: flex;
+            flex-wrap: wrap;
+
+        }
+        .items{
+            height: 100px;
+            width: 100%;
+            border: 1px solid green;
+            margin: 10px;
+            background-color: yellow;
+        }
+        .items img{
+            width: 100%;
+            height: 100%;
+        }
+
+        @media only screen and (min-width:768px){
+            .items{
+            width: 46%;
+            background-color: rgb(7, 61, 224);
+        }
+        #demo1{
+            order: 1;
+        }
+        #demo2{
+            order: 3;
+        }
+        #demo3{
+            order: 2;
+        }
+        #demo4{
+            order: 4;
+        }
+        }
+
+         @media only screen and (min-width:1200px){
+            .items{
+            width: 23%;
+            background-color: rgb(240, 106, 10);
+        }
+        }
+    
+
+    </style>
+</head>
+<body>
+       <section id="container">
+        <div class="items" id="demo1">
+            <img src="https://images.pexels.com/photos/170811/pexels-photo-170811.jpeg" alt="">
+            <h1>1</h1>
+        </div>
+        <div class="items" id="demo2">
+            <img src="https://images.pexels.com/photos/170811/pexels-photo-170811.jpeg" alt="">
+            <h1>2</h1>
+        </div>
+        <div class="items" id="demo3">
+            <img src="https://images.pexels.com/photos/170811/pexels-photo-170811.jpeg" alt="">
+             <h1>3</h1>
+        </div>
+        <div class="items" id="demo4">
+            <img src="https://images.pexels.com/photos/170811/pexels-photo-170811.jpeg" alt="">
+             <h1>4</h1>
+        </div>
+       </section>
+
+
+
+</body>
+</html>
