@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            height: 100px;
+            width: 100px;
+            background-color: red;
+            animation: demo 2s ease 0s 2 normal forwards;
+            /* animation-name: demo;
+            animation-duration: 2s;
+            animation-delay: 2s;
+
+            animation-iteration-count: 2;
+            animation-direction: alternate-reverse;
+            animation-fill-mode: forwards; */
+        }
+
+        @keyframes demo {
+
+           0%{
+                 transform: translateX(-200px) rotateZ(0deg);
+                }
+                
+                25%{
+                    
+                    transform: translateX(800px) rotateZ(360deg);
+                    border-radius: 100%;
+                    background-color: green;
+
+
+           }
+                50%{
+                    
+                    transform: translateY(400px) rotateZ(360deg);
+                    border-radius: 100%;
+                    background-color: green;
+
+
+           }
+            
+        }
+
+
+    </style>
+</head>
+<body>
+     <div>1</div>
+</body>
+</html>
