@@ -1,53 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        div{
+        div {
             height: 100px;
             width: 100px;
             background-color: red;
-            animation: demo 2s ease 0s 2 normal forwards;
-            /* animation-name: demo;
+            clip-path: polygon(0% 20%, 60% 20%, 60% 0%, 100% 50%, 60% 100%, 60% 80%, 0% 80%);
+            /* animation: demo 5s ease 0s 1 normal forwards; */
+            animation-name: demo;
             animation-duration: 2s;
-            animation-delay: 2s;
+            /* animation-delay: 2s; */
 
-            animation-iteration-count: 2;
-            animation-direction: alternate-reverse;
-            animation-fill-mode: forwards; */
+            animation-iteration-count: infinite;
+            animation-direction: reverse;
+            animation-fill-mode: forwards;
         }
 
         @keyframes demo {
-
-           0%{
-                 transform: translateX(-200px) rotateZ(0deg);
-                }
-                
-                25%{
-                    
-                    transform: translateX(800px) rotateZ(360deg);
-                    border-radius: 100%;
-                    background-color: green;
-
-
-           }
-                50%{
-                    
-                    transform: translateY(400px) rotateZ(360deg);
-                    border-radius: 100%;
-                    background-color: green;
-
-
-           }
+            /* 
+            from{
+    
+                transform: translateX(0px) rotateZ(0deg);
+            }
             
+            to{
+                transform: translateX(1000px) rotateZ(360deg);
+                background-color: green;
+                border-radius: 100%;
+                 
+            } */
+
+            0% {
+                transform: translate(0px, 0px) rotateZ(0deg);
+            }
+
+            25% {
+                transform: translate(1000px, 0px) rotateZ(360deg);
+                background-color: green;
+                border-radius: 100%;
+
+            }
+
+            50% {
+                transform: translate(1000px, 400px) rotateZ(-360deg);
+                background-color: rgb(244, 111, 9);
+                border-radius: 0%;
+            }
+
+            75% {
+                transform: translate(0px, 400px) rotateZ(360deg);
+                background-color: rgb(230, 203, 3);
+                border-radius: 100%;
+            }
+
+            100% {
+                 transform: translate(0px, 0px) rotateZ(-360deg);
+                background-color: rgb(76, 2, 166);
+                border-radius: 0%;
+            }
+
         }
-
-
     </style>
 </head>
+
 <body>
-     <div>1</div>
+    <div>1</div>
 </body>
+
 </html>
