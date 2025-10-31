@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #demo1{
+            height: 100px;
+            width: 150px;
+            border: 1px solid;
+            /* overflow: visible; */
+            /* overflow: hidden; */
+            /* overflow: scroll; */
+            overflow: auto;
+
+        }
+
+        #demo2{
+            height: 200px;
+            width: 200px;
+            background-color: red;
+            /* clip-path: polygon(0% 20%, 60% 20%, 60% 0%, 100% 50%, 60% 100%, 60% 80%, 0% 80%); */
+            clip-path: polygon(40% 0%, 40% 20%, 100% 20%, 100% 80%, 40% 80%, 40% 100%, 0% 50%);
+        }
+
+
+
+
+        .custom-shape-divider-bottom-1761883137 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-bottom-1761883137 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 150px;
+}
+
+.custom-shape-divider-bottom-1761883137 .shape-fill {
+    fill: #ab0d0d;
+}
+    </style>
+</head>
+<body>
+           <div class="custom-shape-divider-bottom-1761883137">
+    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+        <path d="M649.97 0L599.91 54.12 550.03 0 0 0 0 120 1200 120 1200 0 649.97 0z" class="shape-fill"></path>
+    </svg>
+</div>
+
+    <div id="demo1">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro nulla quas adipisci est exercitationem harum, repellat eveniet, dolorem eligendi quam nemo quisquam? Quisquam vel fugit, libero enim magni exercitationem quas.
+    </div>
+
+    <div id="demo2">
+
+    </div>
+</body>
+</html>

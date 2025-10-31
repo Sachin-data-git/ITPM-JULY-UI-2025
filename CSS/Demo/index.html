@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        #container,#collection,#demo{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+        }
+        .product{
+            width: 100%;
+            /* border: 1px solid red; */
+            text-align: center;
+            padding: 20px;
+        }
+        .product img{
+            width: 100%;
+        }
+
+        #collection_first{
+            width: 100%;
+            text-align: center;
+        }
+        .collection_child{
+            width: 100%;
+        }
+        .collection_child img{
+            width: 100%;
+        }
+
+        .demo_child{
+            width: 100%;
+        }
+        .demo_child img{
+            width: 100%;
+        }
+
+        @media only screen and (min-width:768px){
+             .product{
+            width: 30%;
+        }
+          .collection_child{
+            width: 47%;
+        }
+        
+        .demo_child{
+            width: 47%;
+        }
+        }
+
+        @media only screen and (min-width:1200px)
+        {
+            .product_parent{
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-evenly;
+                align-items: center;
+            }
+            .child{
+                width: 45%;
+                margin: 8px;
+            }
+            .collection_child{
+            width: 23%;
+        }
+         .demo_child{
+            width: 23%;
+        }
+        }
+    </style>
+</head>
+<body>
+     <section id="container">
+        <div class="product">
+            <div class="product_parent">
+                <div class="child">
+                    <img src="https://eona.qodeinteractive.com/wp-content/uploads/2020/05/Shop-clothes-img-1.png" alt="">
+                </div>
+                <div class="child">
+                    <h2>FLATS</h2>
+                    <p>From The Sring</p>
+                </div>
+            </div>
+        </div>
+        <div class="product">
+            <div class="product_parent">
+                <div class="child">
+                    <img src="https://eona.qodeinteractive.com/wp-content/uploads/2020/05/Shop-clothes-img-2.png" alt="">
+                </div>
+                <div class="child">
+                    <h2>BOOTS</h2>
+                    <p>From The Sring</p>
+                </div>
+            </div>
+        </div>
+        <div class="product">
+            <div class="product_parent">
+                <div class="child">
+                    <img src="https://eona.qodeinteractive.com/wp-content/uploads/2020/05/Shop-clothes-img-3.png" alt="">
+                </div>
+                <div class="child">
+                    <h2>SANDALS</h2>
+                    <p>From The Sring</p>
+                </div>
+            </div>
+        </div>
+     </section>
+
+
+     <section id="collection">
+        <div id="collection_first">
+            <p>Our Products</p>
+            <h2>from the new collection</h2>
+            <p>Check out some of the stand outs from our collection</p>
+        </div>
+        <div class="collection_child">
+            <img src="https://eona.qodeinteractive.com/wp-content/uploads/2020/05/Single-product-img-8.jpg" alt="Image not Found">
+            <p>fashion</p>
+            <h3>MODERN BAG</h3>
+            <p>185$</p>
+        </div>
+        <div class="collection_child">
+            <img src="https://eona.qodeinteractive.com/wp-content/uploads/2020/05/Single-product-img-8.jpg" alt="Image not Found">
+            <p>fashion</p>
+            <h3>MODERN BAG</h3>
+            <p>185$</p>
+        </div>
+        <div class="collection_child">
+            <img src="https://eona.qodeinteractive.com/wp-content/uploads/2020/05/Single-product-img-8.jpg" alt="Image not Found">
+            <p>fashion</p>
+            <h3>MODERN BAG</h3>
+            <p>185$</p>
+        </div>
+        <div class="collection_child">
+            <img src="https://eona.qodeinteractive.com/wp-content/uploads/2020/05/Single-product-img-8.jpg" alt="Image not Found">
+            <p>fashion</p>
+            <h3>MODERN BAG</h3>
+            <p>185$</p>
+        </div>
+     </section>
+
+
+     <section id="demo">
+        <div class="demo_child">
+            <img src="https://eona.qodeinteractive.com/wp-content/uploads/2020/05/shop-clothes-img-06.png" alt="">
+        </div>
+        <div class="demo_child">
+            <img src="https://eona.qodeinteractive.com/wp-content/uploads/2020/05/shop-clothes-img-07.png" alt="">
+        </div>
+        <div class="demo_child">
+            <img src="https://eona.qodeinteractive.com/wp-content/uploads/2020/05/shop-clothes-img-08.png" alt="">
+        </div>
+        <div class="demo_child">
+            <img src="https://eona.qodeinteractive.com/wp-content/uploads/2020/05/shop-clothes-img-09.png" alt="">
+        </div>
+     </section>
+</body>
+</html>
