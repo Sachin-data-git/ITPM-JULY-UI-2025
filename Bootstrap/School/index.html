@@ -24,18 +24,20 @@
             background-size: 100% 100%;
         }
 
-        .card {
+        .over {
             position: relative;
 
         }
 
-        #over::before {
+        .over::before {
             content: " ";
             position: absolute;
             top: 0;
-            bottom: 0;
-            background: linear-gradient(red, blue) !important;
-            z-index: 99;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(rgba(255, 0, 0, 0.512), rgba(0, 0, 255, 0.483)) !important;
+            /* z-index: 99; */
         }
     </style>
 </head>
@@ -533,7 +535,7 @@
         <section class="container" id="overlay">
             <div class="row">
                 <div class="col-12 col-md-4">
-                    <div class="card text-bg-dark" id="over">
+                    <div class="card text-bg-dark over">
                         <img src="https://smartyschool.stylemixthemes.com/kindergarten/wp-content/uploads/2015/12/news2-350x190.jpg"
                             class="card-img" alt="...">
                         <div class="card-img-overlay">
@@ -545,7 +547,7 @@
                     </div>
                 </div>
                 <div class="col-12 col-md-4">
-                    <div class="card text-bg-dark">
+                    <div class="card text-bg-dark over">
                         <img src="https://smartyschool.stylemixthemes.com/kindergarten/wp-content/uploads/2015/12/news2-350x190.jpg"
                             class="card-img" alt="...">
                         <div class="card-img-overlay">
@@ -557,10 +559,10 @@
                     </div>
                 </div>
                 <div class="col-12 col-md-4">
-                    <div class="card text-bg-dark">
+                    <div class="card text-bg-dark over">
                         <img src="https://smartyschool.stylemixthemes.com/kindergarten/wp-content/uploads/2015/12/news2-350x190.jpg"
                             class="card-img" alt="...">
-                        <div class="card-img-overlay text-dark">
+                        <div class="card-img-overlay ">
                             <h5 class="card-title">Card title</h5>
                             <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
                                 additional content. This content is a little bit longer.</p>
