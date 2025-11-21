@@ -1,22 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
-      <script>
+
+    <button onclick="demo()">Login</button>
+    <script>
         //print numbers from 1 to 10 
         //   syntax  for(init;condition;updation){//block}
 
-           //1->2->3->4---->2->3->4---->2->3->4
-         //    1     2     4
+        //1->2->3->4---->2->3->4---->2->3->4
+        //    1     2     4
         // for(let i=1;i<=10;i++){
         //     //3
         //     console.log(i);
         // }
-       
+
         // console.log("Loop terminated...")
 
 
@@ -39,9 +43,9 @@
         //     console.log(i);
         //     i++;
         // }
-        
+
         // console.log("loop terminated")
-    
+
         // let n=1
         // for(n;n<=10;n++){
         //     console.log(n);
@@ -53,7 +57,7 @@
         //do{
         // //block
         // }while(cond);
-        
+
         // let i=1;
 
         // do{
@@ -61,24 +65,49 @@
         //     i++;
         // }while(i>=10);
 
-
-      do{
-          let userName=prompt("Enter UserName");
-        let password=prompt("Enter Password");
-
-        if((userName=="demo") && (password=="demo@123")){
-            alert("login Successfully....")
-        }else{
-            alert("userName And password is incorrect")
-
-        }
-      }while(!((userName=="demo") && (password=="demo@123")))
-
+    function demo(){
+        
+        let userName = prompt("Enter UserName");
+        let password = prompt("Enter Password");
       
-       
+
+        let count=1;
+        do {
+
+
+            if ((!((userName == "demo") && (password == "demo@123")))) {
+
+                alert("userName And password is incorrect ,attempt " + count +"fail" )
+                userName = prompt("Re-Enter UserName");
+                password = prompt("Re-Enter Password");
+                count++;
+            
+               
+
+            } else {
+                alert("login Successfully....")
+
+            }
+        } while (!((userName == "demo") && (password == "demo@123")));
+
+        alert("login Successfully....")
 
 
 
-      </script>
+
+
+    }
+
+
+       for(i=1;i<=10;i++){
+        if(i==3){
+            // break;
+            continue;
+        }
+        console.log(i);
+       }
+
+    </script>
 </body>
+
 </html>
