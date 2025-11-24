@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        let d = 20; //global scope
+        //User Defined Function
+        //function declaration
+        // 1)default function
+        // function addTwoNum(){
+        //     console.log(10+20);  //30
+        // }
+        //function calling
+        // addTwoNum();
+        // addTwoNum();
+
+        //hoisting
+        //2) parameterized function
+        // function  addTwoNum(a,b){
+        //     console.log(a+b);
+        // }
+
+        // let x=10;
+        // let y=30
+        // addTwoNum(x,y);
+        // addTwoNum(30,20);
+        // addTwoNum(30,20);
+
+        //default parameter
+        // function greet(msg="Hello"){
+        //         console.log(msg)
+        // }
+
+        // greet("Good Morning");
+        // greet("Good Afternoon");
+        // greet();
+
+
+        //3)return type function / function returning values
+
+        // function mul(a,b){
+        //     return a*b;
+        // }
+        // let result=mul(2,5);
+        // console.log(result);
+
+
+        //Rest / Default
+
+        // function num(a,b,c,...restData){
+        //     console.log(a,b,c,restData);
+        // }
+
+        // num(10,20,30);
+        // num(10,20);
+        // num(10,20,30,40,50,60,70,80,90,100);
+
+        // function demo(){
+        //     let p=20;  //function scope
+        //     console.log(p)
+        // }
+        // demo()
+        // console.log(p);
+
+        // function demo1(){
+
+        //     console.log(p)
+        // }
+        // demo1();
+
+
+
+        //Arrow Function
+
+        // const arrFn=()=>{
+        //      console.log("Hello")
+        // }
+        // arrFn();
+
+        //IIFE (Imediate Invoked Function Expression)
+        // (()=>{
+        //     console.log("Hello");
+        // })();
+
+        //    ( function demo(){
+        //         console.log("Demo");
+        //     })()
+
+
+
+
+
+
+
+        // setTimeout(function,timeout)
+
+        // function greet(){
+        //     console.log("hello")
+        // }
+        // // greet
+        // setTimeout(greet(),2000);
+
+
+        // greet
+        // setTimeout(()=>{
+        //     console.log("hello")
+        // },2000);
+
+
+        // let demo=function(){
+        //     console.log("Function Expression")
+        // }
+        // demo()
+
+
+        // demo1();
+        // function demo1(){
+        //     console.log("Normal Function")
+        // }
+
+
+
+
+        //js closure
+        // function Outer() {
+        //     let a = 10;
+        //     console.log(a);
+
+        //     function inner() {
+        //         let x = 10;
+        //         console.log(a);
+        //     }
+        //     console.log(x);
+        //     inner();
+        // }
+
+        // Outer();
+
+        for (var i = 1; i <= 3; i++) {
+  setTimeout(() => console.log(i), 2000);
+}
+//         for (let i = 1; i <= 3; i++) {
+//   setTimeout(() => console.log(i), 2000);
+// }
+
+
+
+// TASK
+// Create a function that prints the addition of two numbers.
+
+
+// Create a function that takes two numbers and prints their product.
+
+
+// Write a function that subtracts one number from another and returns the result.
+
+// Write a function divide(a, b) that returns the result of dividing a by b. Set a default value of 1 for b.
+
+
+// Create a function greet(name = "User") that prints a greeting message like "Hello, User!".
+
+// Write a function square(num = 2) that returns the square of a number.
+
+
+// Create a function fullName(firstName, lastName = "Doe") that prints the full name of a person.
+
+// Write a function findArea(length = 5, width = 10) that returns the area of a rectangle.
+
+
+// Create a function showAge(name = "Unknown", age = 0) that prints a sentence like "Unknown is 0 years old.".
+
+// Write a function isEven(num = 0) that returns true if the number is even, and false otherwise.
+
+// Create a function repeatMessage(message = "Hi", times = 3) that prints the message multiple times.
+
+// Write a function formatEmail(username = "user", domain = "example.com") that returns an email address in the format user@example.com.
+
+// Write a function isPositive(num = 0) that returns true if the number is positive, false otherwise.
+
+// Create a function minValue(a = 10, b = 20) that returns the smaller of the two numbers.
+
+
+// Write a function maxValue(a = 10, b = 20) that returns the larger of the two numbers.
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>
