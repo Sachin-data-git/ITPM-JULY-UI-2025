@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let person = {
+            fullName: function () {
+                return (this.fname + " " + this.lname);
+            }
+        }
+
+        // return (
+        //     <>   
+        //         <div> </div>
+        //         <div> </div>
+        //     </>)
+
+
+        // let person1 = {
+        //     fname: "Ajay",
+        //     lname: "Tambe"
+        // }
+        // let person2 = {
+        //     fname: "Atul",
+        //     lname: "Shinde"
+        // }
+
+        // console.log(person.fullName.call(person1))
+        // console.log(person.fullName.call(person2))
+
+
+        // function demo(fname,lname){
+        //     console.log(fname,lname)
+        // }
+
+        // demo("ajay","tambe")
+
+
+        //assign()
+
+
+        // let obj1={
+        //     a:1,
+        //     b:2
+        // }
+        // let obj2={
+        //     b:3,
+        //     c:4
+        // }
+
+        // obj1.b=3;
+
+        // console.log(obj1);
+        // console.log(obj2);
+
+        // let obj3=Object.assign({},obj1);
+        // console.log(obj3);
+        // console.log(obj1==obj3);
+
+        
+
+       // copy
+
+       let original={
+        id:1,
+        name:"Aman",
+        marks:{
+            Mar:10,
+            Hin:20
+        }
+
+       }
+
+
+       //shallow Copy
+    //    let shallowCopy=Object.assign({},original);
+    //    let shallowCopy=original;
+    //    console.log("Before Updation in shallowcopy")
+    //    console.log(original);
+    //    console.log(shallowCopy);
+
+    //    shallowCopy.marks.Mar=100;
+    //    shallowCopy.id=100;
+       
+    //    console.log("after Updation in shallowcopy")
+    //      console.log(original);
+    //    console.log(shallowCopy);
+
+
+    //deep copy
+
+    // let deepCopy=JSON.parse(JSON.stringify(original));
+    // let deepCopy=Object.assign({},original);
+
+    // deepCopy.marks.Mar=100;
+    // console.log(original)
+    // console.log(deepCopy)
+
+
+    const d={
+        
+    }
+    
+
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>
