@@ -1,0 +1,99 @@
+1. Find the Largest Number in an Array
+  Example: [1, 5, 3, 9, 2] → 9
+
+2. Reverse an Array Without Using reverse()
+   Expected output: [5,4,3,2,1]
+
+3. Count Even Numbers in an Array
+  Array input → count how many numbers are even.
+
+4. Sum of Array Elements
+   Using a loop
+
+5. Add a Property to an Object Dynamically 
+    Example: add "year": 2025.
+
+6. Array of Objects — Print all Names
+Code : let users = [
+  { name: "A", age: 20 },
+  { name: "B", age: 25 },
+  { name: "C", age: 30 }
+];
+
+7. Find a User Whose Age > 20
+
+8.Print Numbers from 1 to 50
+
+9. Print Table of Any Number (e.g. 2, 5, 7)
+
+10. Print Only Odd Numbers Between 1–10020. Create a Function That Returns Square of a Number
+
+11. Write a Function to Check Prim Number
+
+12. Write a Function That Returns the Sum of 2 Numbers
+
+13. Create a Function That Returns Square of a Number
+
+14. Reverse a String Without Using reverse()
+   Input: "hello" → Output: "olleh"
+
+15.Count Number of Vowels
+   Input: "javascript"
+
+16. Check Palindrome
+    Input: "level" → Output: true
+
+17. Find Length of String Without Using length Property
+
+18. Replace All Spaces With Hyphens
+   Input: "hello world js"
+   Output: "hello-world-js"
+
+19. Create an array of employee objects:
+    Code : 
+[
+  { name: "John", salary: 25000, dept: "IT" },
+  { name: "Sara", salary: 30000, dept: "HR" },
+  { name: "Mike", salary: 20000, dept: "IT" }
+]
+Tasks inside:
+Write a function to print employees of IT department.
+Find total salary using a loop.
+Convert all names to uppercase.
+Find highest paid employee.
+
+21. let str = "hello javascript world";Tasks:
+TASK on ABove STring :
+Count vowels
+Remove spaces
+Convert to array of characters
+Find most repeated character
+Reverse the string without using reverse()
+
+22.Array of movie objects:
+  Code:[
+  { title: "Kantara", rating: 9, year: 2022 },
+  { title: "KGF", rating: 8, year: 2018 },
+  { title: "Pushpa", rating: 7, year: 2021 }
+]
+TASK : Write function to return movies with rating > 8
+Sort movies by year
+Convert all titles to uppercase
+Find oldest movie
+
+23. Banking System Mini Project
+let account = {
+  holder: "Sachin",
+  balance: 5000,
+  transactions: []
+};
+
+24. Banking System Mini Project
+   code: let account = {
+  holder: "Sachin",
+  balance: 5000,
+  transactions: []
+};
+ TASK : 
+1)Create a function deposit(amount)
+2)Create function withdraw(amount) (check balance)
