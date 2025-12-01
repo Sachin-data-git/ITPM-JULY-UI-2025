@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- <style>
+
+        #demo{
+            color: red;
+            background-color: yellow;
+            padding: 10px;
+        }
+
+    </style> -->
+</head>
+
+<body>
+    <!-- <p id="demo">Lorem ipsum dolor sit amet.1</p> -->
+
+
+
+    <span class="newcls">This is span 1</span><br>
+    <span class="newcls">This is span 2</span><br>
+    <span class="newcls">This is span 3</span><br>
+    <span class="newcls">This is span 4</span><br>
+
+
+
+    
+
+    <script>
+        // DOM ACCESSING METHODS
+
+        // 1)By id getElementById("IdName");
+        // let para = document.getElementById("demo");
+        // console.log(para);
+        // console.log(para.nodeName);
+        // console.log(para.tagName);
+
+
+        //By class - getElementsByClassName("className");
+
+        // let newcls=document.getElementsByClassName("newcls");
+        
+        //    for(i=0;i<newcls.length;i++){
+        //     console.log(newcls[i])
+        //    }
+
+        //By Tag - getElementsByTagName("tagName");
+
+        // let newTag=document.getElementsByTagName("span");
+        
+        //    for(i=0;i<newTag.length;i++){
+        //     console.log(newTag[i])
+        //    }
+
+
+        
+        //by querySelector()
+        // let qs=document.querySelector("span");
+        // console.log(qs)
+
+        //by querySelectorAll()
+        let qsa=document.querySelectorAll("span");
+       for(i=0;i<qsa.length;i++){
+         console.log(qsa[i])
+       }
+    </script>
+</body>
+
+</html>

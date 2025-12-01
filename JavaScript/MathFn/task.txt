@@ -62,7 +62,10 @@ Find total salary using a loop.
 Convert all names to uppercase.
 Find highest paid employee.
 
-21. let str = "hello javascript world";Tasks:
+21. let str = "hello javascript world";
+          [h,e,......]
+
+Tasks:
 TASK on ABove STring :
 Count vowels
 Remove spaces
