@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p{
+             background-color: rgb(255, 255, 255);
+            color: rgb(0, 0, 0);
+            padding: 20px;
+            font-size: 40px;
+
+        }
+        .dark{
+            background-color: black;
+            color: white;
+            padding: 20px;
+            font-size: 40px;
+        }
+        .yellow{
+            background-color: rgb(247, 235, 7);
+            color: rgb(250, 4, 4);
+            padding: 20px;
+            font-size: 40px;
+        }
+        #newId{
+            color: blue;
+        }
+        #newId1{
+            color: rgb(44, 233, 6);
+        }
+        
+    </style>
+</head>
+<body>
+    <p class="dark" id="newId">Lorem ipsum dolor sit amet.</p>
+    <button onclick="addClass()">add</button>
+    <button onclick="removeClass()">remove</button>
+    <button onclick="replaceClass()">replace</button>
+    <button onclick="toggleClass()">change to light</button>
+    <button onclick="check()">check dark is there or not</button>
+
+    <script>
+        let para=document.querySelector("p");
+        //Styling 1)using style-     syntax:- element.style.cssProperty="value"
+        // para.style.color="red"
+        // para.style.backgroundColor="yellow"
+        // para.style.fontSize="40px"
+
+        // 2)syntax :- element.style.setProperty("propertyName","PropertyValue");
+                    //    para.style.setProperty("color","red");
+                    //    para.style.setProperty("background-color","yellow");
+
+         //3) by using classList Method- add(),remove(),replace(),toggle(),contains();  
+            // syntax: -   element.classList.add("className");  
+        //    function addClass(){
+        //      para.classList.add("dark");
+        //    }
+           
+        //    function removeClass(){
+        //      para.classList.remove("dark");
+        //    }
+        //    function replaceClass(){
+        //      para.classList.replace("dark","yellow");
+        //    }
+        //    function toggleClass(){
+        //      para.classList.toggle("dark");
+        //    }
+
+        // 4)by id  element.id="newId";
+        // para.id="newId1"
+
+
+        // function check(){
+        //    alert( para.classList.contains("dark"))
+
+        // }
+
+
+        // TASK
+
+
+        
+        //  Task 1: Dark Mode Toggle
+// Create a button "Toggle Theme".
+// When clicked:
+// Add a dark class to the body
+// When clicked again, remove the class
+// Use CSS to change background and text color
+
+
+// Task 2: Show / Hide Content
+// Create a paragraph and a button.
+// When clicking the button:
+// If the paragraph is visible, add a class hidden and hide it.
+// If hidden, remove that class and show it again.
+// Use CSS to style .hidden { display: none; }
+
+
+// Task 3: Add Active Class on Menu Items
+// Create a navigation menu with 4 items.
+// When the user clicks any item:
+// Remove active class from all items
+// Add active class to the clicked item
+// Active item should be highlighted using CSS.
+
+
+
+// Task 4: Change Box Color on Click
+// Create a square <div> box.
+// Make 3 buttons:
+// Red
+// Green
+// Blue
+// When clicking a button:
+// Remove all previous color classes (redBox, greenBox, etc)
+
+
+
+// Task 5: Animate Box Using ClassList
+// Create a box and a button “Animate”.
+// When clicked:
+// Add a class move
+// In CSS:
+// .move should animate using transform: translateX(200px); transition: 1s;
+
+
+
+// Task 6: Create a Tab Component
+// Make 3 tabs:
+// Home
+// About
+// Contact
+// Clicking a tab should:
+// Add active class to selected tab
+// Add show class to its content section
+// Remove classes from others
+
+
+// Task 10: Change Font Size Using Buttons
+// Create a paragraph and 3 buttons:
+// Increase font
+// Decrease font
+// Reset font
+// Use classList to apply classes:
+// .small-text
+// .large-text
+// .normal-text
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+    </script>
+</body>
+</html>

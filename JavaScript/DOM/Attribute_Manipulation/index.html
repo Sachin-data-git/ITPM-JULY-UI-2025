@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <img src="https://images.pexels.com/photos/170811/pexels-photo-170811.jpeg" height="300" width="300" alt="">
+    <button onclick="changeCar()">red Car</button>
+
+    <br>
+    <br><hr>
+
+    <a href="https://www.pexels.com/search/car/" target="_blank">click</a>
+    <button onclick="demo()">getData</button>
+    <button onclick="removeTarget()">remove Target</button>
+    <button onclick="hasTarget()">has Attribute</button>
+
+    <script>
+        function changeCar(){
+            let img=document.querySelector("img");
+            img.setAttribute("src","https://images.pexels.com/photos/210019/pexels-photo-210019.jpeg")
+            img.setAttribute("title","Car Image")
+
+        }
+
+        function demo(){
+
+            let link=document.querySelector("a");
+            let url=link.getAttribute("href");
+            let targetValue=link.getAttribute("target");
+            alert(url);
+            alert(targetValue);
+          
+        }
+
+        function removeTarget(){
+            let link=document.querySelector("a");
+            link.removeAttribute("target");
+            alert("target Removed...")
+            
+        }
+
+        function hasTarget(){
+            let link=document.querySelector("a");
+            let output=link.hasAttribute("target");
+            console.log(output);
+        }
+
+        
+
+        // TASK
+        
+//        Task 1: Change Image Source
+// Create an image with a default picture.
+// Add 3 buttons:
+// Load Car
+// Load Bike
+// Load Nature
+// When clicking a button:
+// Use setAttribute("src", "...") to change the image source.
+
+// Task 2: Toggle Disabled Attribute
+// Create a text input and a button “Enable/Disable”.
+// When button is clicked:
+// If the input hasAttribute("disabled"), remove it.
+// Else setAttribute("disabled", true).
+
+
+// Task 3: Show Value of Attribute
+// Create a link <a> tag.
+// Add a button “Show Href”.
+// When button is clicked:
+// Use getAttribute("href")
+// Display the value inside a paragraph.
+
+
+// Task 4: Mark Required Fields
+// Create a form with two inputs:
+// Name
+// Email
+// Make a button “Mark Required”.
+// When clicked:
+// Add required attribute using setAttribute("required", true)
+// Show a message “Fields are now required”.
+
+// Task 5: Remove Style Attribute
+// Create a div with inline style:
+// <div style="background: red; width:100px; height:100px"></div>
+// Add a button “Remove Style”.
+// When clicked:
+// Use removeAttribute("style") to reset the design.
+
+
+// Task 6: Toggle Image Alt Text
+// Create an image with alt="A beautiful image".
+// Make a button:
+// When clicked, if image hasAttribute("alt") remove it.
+// Else set a new alt using setAttribute("alt", "New alt text").
+
+
+// Task 7: Check Attribute Existence
+// Create an input with placeholder.
+// Make a button “Check Placeholder”.
+// When clicked:
+// If hasAttribute("placeholder") is true → show message “Placeholder exists”
+// Else show “No placeholder found”
+
+
+// Task 8: Add Class Using setAttribute
+// Create a paragraph.
+// Make a button:
+// Add class highlight to the paragraph using setAttribute("class", "highlight")
+// CSS should style the highlight class (yellow background)
+
+
+// Task 09: Show Image Width/Height
+// Create an image.
+// Add a button “Check Image Size”.
+// When clicked:
+// Use getAttribute('width') and getAttribute('height')
+// Display them in a paragraph.
+
+
+// Task 10: Remove Hyperlink
+// Create an anchor tag with href.
+// Add a button “Remove Link”.
+// When clicked:
+// Use removeAttribute("href")
+// The link should no longer work
+
+// Task 11: Required Fields Toggle
+// Create a form.
+// Add a button:
+// If inputs do not have required → add required
+// Else → remove required
+// Use hasAttribute, setAttribute & removeAttribute.
+
+
+// Task 12: Auto-Play Video Controller
+// Create a <video> tag with controls.
+//     Create 2 buttons:
+//     Enable Autoplay
+//     Disable Autoplay
+//     When clicked:
+//     Use setAttribute("autoplay", "")
+//     Use removeAttribute("autoplay")
+//     Reload video after applying.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>
