@@ -30,6 +30,17 @@
         #newId1{
             color: rgb(44, 233, 6);
         }
+
+        .active{
+            font-weight: bold;
+            background-color: black;
+            color:white;
+            padding: 20px;
+        }
+        a{
+            
+            cursor: grab;
+        }
         
     </style>
 </head>
@@ -41,8 +52,53 @@
     <button onclick="toggleClass()">change to light</button>
     <button onclick="check()">check dark is there or not</button>
 
+    <hr>
+    <nav>
+        <a class="" onclick="demo1()">Home</a>
+        <a class="" onclick="demo2()">About</a>
+        <a class="" onclick="demo3()">Service</a>
+        <a class="" onclick="demo4()">Contact</a>
+    </nav>
+
     <script>
-        let para=document.querySelector("p");
+
+        let link= document.getElementsByTagName("a");
+        function demo1(){
+
+               link[0].classList.add("active")
+               link[1].classList.remove("active")
+               link[2].classList.remove("active")
+               link[3].classList.remove("active")
+
+        }
+        function demo2(){
+
+               link[1].classList.add("active");
+               link[0].classList.remove("active")
+               link[2].classList.remove("active")
+               link[3].classList.remove("active")
+
+        }
+        function demo3(){
+
+               link[2].classList.add("active");
+               link[0].classList.remove("active")
+               link[1].classList.remove("active")
+               link[3].classList.remove("active")
+
+        }
+        function demo4(){
+
+               link[3].classList.add("active");
+               link[0].classList.remove("active")
+               link[2].classList.remove("active")
+               link[1].classList.remove("active")
+
+        }
+
+
+
+        // let para=document.querySelector("p");
         //Styling 1)using style-     syntax:- element.style.cssProperty="value"
         // para.style.color="red"
         // para.style.backgroundColor="yellow"
@@ -138,7 +194,7 @@
 // Remove classes from others
 
 
-// Task 10: Change Font Size Using Buttons
+// Task 7: Change Font Size Using Buttons
 // Create a paragraph and 3 buttons:
 // Increase font
 // Decrease font

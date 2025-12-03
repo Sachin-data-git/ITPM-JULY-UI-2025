@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            border: 2px solid red;
+            padding: 30px;
+        }
+    </style>
+</head>
+<body>
+
+
+      <div>
+        <p id="first">Lorem ipsum dolor sit amet.1</p>
+        <p id="second">Lorem ipsum dolor sit amet.2</p>
+
+      </div>
+
+      <button onclick="addData()">AddData</button>
+      <button onclick="inserBeforess()">InsertBefore</button>
+      <button onclick="removeEl()">removeElement</button>
+      <button onclick="replaceEl()">replace</button>
+
+      <script>
+               
+
+
+           function addData(){
+             let newEl=document.createElement("p");
+        console.log(newEl);
+
+        let newData=document.createTextNode("This is New Paragraph Text");
+        console.log(newData);
+
+        newEl.appendChild(newData);
+        console.log(newEl);
+
+        let parent=document.querySelector("div");
+        parent.appendChild(newEl);
+           }
+           function inserBeforess(){
+             let newEl=document.createElement("p");
+        console.log(newEl);
+
+        let newData=document.createTextNode("This is New Paragraph Text");
+        console.log(newData);
+
+        newEl.appendChild(newData);
+        console.log(newEl);
+
+        let parent=document.querySelector("div");
+        let second=document.getElementById("second");
+        parent.insertBefore(newEl,second)
+      
+           }
+
+
+           function removeEl(){
+            let parent=document.querySelector("div");
+            let second=document.getElementById("second");
+            // parent.remove();
+            parent.removeChild(second)
+           }
+
+
+           function replaceEl(){
+            let el=document.createElement("h1");
+            let con=document.createTextNode("This is Updated H1");
+            el.appendChild(con);
+
+            let ref=document.getElementById("first");
+            let parent=document.querySelector("div");
+
+            // parent.insertBefore(el,ref)
+            parent.replaceChild(el,ref)
+
+        }
+
+
+        
+        
+        
+        // TASK
+        
+        // Task 1: Create a List Dynamically
+        // Create a webpage where clicking a button will:
+        // Create a <li> element using createElement()
+        //     Add text inside it using createTextNode()
+        //     Append it into an existing <ul> using appendChild()
+
+
+// Task 2: Insert a New Item Before Another Item
+// You are given a list of 4 items in HTML.
+// Create a button "Insert New Item Before 2nd Item".
+// When clicked:
+// Create a new <li> using createElement()
+//     Add text using createTextNode()
+//     Insert this new element before the 2nd <li> using insertBefore().
+
+    // Task 3: Replace an Existing Element
+    // Create two elements in HTML: a paragraph and a button.
+    // On button click:
+    // Create a new paragraph
+    // Replace the old paragraph with the new one using replaceChild().
+    
+    // Task 4: Delete an Item Using removeChild()
+    // Create a list of 5 items.
+    // Add a button "Delete Last Item"
+    // When clicked:
+    // Select the last <li> item
+    //     Remove it using removeChild().
+    
+    
+    // Task 5: Remove Element Using .remove()
+    // Create three boxes (div) with background colors.
+    // Add a button under each box: "Remove Me"
+    // On button click:
+    // Use .remove() to delete that div from the DOM.
+
+
+// Task 6: Dynamic Menu Builder
+// Create a text field + Add Item button.
+// When user enters text:
+// Create new <li> using createElement()
+//     Add text using createTextNode()
+//     Add to menu using appendChild().
+//     Add another button:
+//     Remove First Item
+//     Remove the first item using removeChild().
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </script>
+</body>
+</html>

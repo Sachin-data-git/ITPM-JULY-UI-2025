@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+       <!-- <div>
+        <p>Lorem ipsum dolor sit amet.</p>
+       </div> -->
+
+       <!-- <p>This is Old Pargraph</p>
+       <button onclick="setData()">setData</button> -->
+
+       <input type="text" placeholder="Enter Name" name="UserName">
+       <input type="submit" onclick="demo()">
+
+
+       <!-- <button onclick="Theme()">DARK</button> -->
+       <script>
+        //  function demo(){
+        //      let input=document.querySelector("input").value;
+        //   console.log(input)
+        //  }
+
+
+
+
+        //  let div=document.querySelector("div");
+        // console.log(div);
+        //get or set
+        //  let data=document.querySelector("div");
+        //  console.log(data.innerText="<p>This is new Data</p>");
+        //  console.log(data.innerHTML="<p>This is new Data</p>");
+        //  console.log(data.innerHTML);
+
+        //get 
+        // let data=document.querySelector("p").textContent;
+        // console.log(data);
+
+        // //set (replace)
+        // function setData(){
+        //      document.querySelector("p").textContent="This is New Paragraph";
+        // }
+
+
+
+        function Theme(){
+            document.body.style.background="black"
+
+           let text=document.querySelector("button").textContent;
+           console.log(text)
+
+           if(text=="DARK")
+           {
+            document.querySelector("button").textContent="LIGHT";
+        }else{
+               document.querySelector("button").textContent="DARK";
+
+           }
+
+
+
+        }
+       </script>
+</body>
+</html>
