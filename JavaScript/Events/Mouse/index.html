@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium voluptatum velit doloribus architecto aperiam ad quam cupiditate, odit laboriosam! Ad repellat blanditiis quod eius eveniet corporis consectetur veniam consequatur neque!</p>
+   <span></span>
+     <div>
+        <span>
+              <button>Click</button>
+        </span>
+     </div>
+
+       <script>
+          let btn=document.querySelector("button");
+        //   btn.onclick=function(){
+        //     document.querySelector("p").style.color="red"
+        //   }
+
+        // element.addEventListener("eventName",()=>{},propagation)
+          let count=0;
+       btn.addEventListener("click",demo)
+
+       function demo(){
+      
+
+        document.querySelector("span").innerHTML=count;
+        count++;
+         if(count==1){
+        btn.removeEventListener("click",demo);
+       }
+    }
+
+
+            // TASK
+        
+        //         Assignment Task: Show/Hide Password Using Mouse Events
+// Question:1)
+// Create a simple password input field with a button (or icon) next to it that allows users to temporarily view their password by pressing and holding the button with the mouse.
+
+// 🔧 Requirements:
+// Use an <input type="password"> element for the password.
+// Add a button (e.g., labeled "👁️" or "Show") next to the password field.
+// When the user presses and holds the button using the mouse (mousedown), the password should become visible (type="text").
+// When the user releases the mouse button (mouseup) or moves the mouse away from the button (mouseleave), the password should be hidden again (type="password").
+// Style the form neatly using basic CSS for better appearance.
+
+
+// 2).Change Color on Click
+// Create a box (div).
+// When the user clicks on it, change its background color.
+
+
+// 3) Double Click to Increase Size
+// Create a box.
+// When user double-clicks, increase its width & height by 50px.
+
+
+// 4) Mouseover to Show Message
+// When user hovers over a paragraph (mouseover), show message:
+// "Mouse is over the text!"
+// When mouse leaves (mouseout), hide the message.
+
+
+// 5) Display Mouse Coordinates
+// Create a large box.
+// Every time the mouse moves inside it, show:
+// X: ___ Y: ___
+// using mousemove.
+
+
+// 6) Right Click Menu
+// Disable the browser default right-click using contextmenu.
+// Show your own message:
+// "Right click disabled!"
+
+
+// 7) Change Image on Hover
+// When mouse enters an image → change the image.
+// When mouse leaves → change it back.
+
+
+
+// 8) Change Text on Click
+// Create a paragraph.
+// When clicked once → change text to "Clicked!"
+// When double-clicked → change text to "Double Clicked!"
+
+
+
+// 9) . Click Counter
+// Count how many times a user clicks a button.
+// Show count below it.
+
+
+// 10) Border Change on Hover
+// On mouseover → add a thick border.
+// On mouseout → remove the border.
+
+
+
+//11).  Right-Click to Change Background
+// When user right-clicks anywhere on the page, background color changes randomly.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      
+
+     
+
+
+
+        
+     
+
+
+      
+       </script>
+</body>
+</html>

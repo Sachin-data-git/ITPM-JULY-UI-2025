@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+      <!-- contextmenu -->
+
+      <!-- preventDefault()  to stop the browser default behaviour -->
+
+      <script>
+        let count=1;
+        document.addEventListener("contextmenu",(event)=>{
+
+
+            event.preventDefault();
+            if(count==3){
+                window.close();
+            }
+            alert("You pressed Right click and that is prevented ..." +count);
+            count++;
+        })
+      </script>
+</body>
+</html>

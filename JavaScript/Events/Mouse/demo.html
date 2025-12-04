@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #demo{
+            border: 1px solid red;
+            height: 300px;
+            width: 300px;
+
+        }
+    </style>
+</head>
+<body>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. At voluptate ullam eveniet maxime perspiciatis libero qui, molestiae doloremque perferendis numquam eius excepturi hic voluptates culpa ad dignissimos, nostrum distinctio et!</p>
+    <section>
+        <div>
+            <span>
+                 <button>Click</button>
+
+            </span>
+        </div>
+    </section>
+
+
+    <div id="demo">
+
+    </div>
+
+     <script>
+        let btn=document.querySelector("button");
+        // btn.onclick=function(){
+        //     alert("one");
+        // }
+        // btn.ondblclick=function(){
+        //         alert("two");
+        //     }
+            
+        //     btn.addEventListener("click",()=>{
+                
+        //             alert("one");
+        // })
+        //     btn.addEventListener("click",()=>{
+                
+        //             alert("Two");
+        // })
+
+
+        // btn.addEventListener("dblclick",()=>{
+        //         document.querySelector("p").style.color="red";
+        // })
+
+        // btn.addEventListener("mousedown",()=>{
+        //     document.body.style.backgroundColor="black";
+        // })
+        // btn.addEventListener("mouseup",()=>{
+        //     document.body.style.backgroundColor="white";
+        // })
+        // btn.addEventListener("mouseover",()=>{
+        //     document.body.style.backgroundColor="black";
+        // })
+        // btn.addEventListener("mouseout",()=>{
+        //     document.body.style.backgroundColor="white";
+        // })
+        // btn.addEventListener("mouseenter",()=>{
+        //     document.body.style.backgroundColor="black";
+        // })
+        // btn.addEventListener("mouseleave",()=>{
+        //     document.body.style.backgroundColor="white";
+        // })
+
+         let count=0;
+        document.getElementById("demo").addEventListener("mousemove",(event)=>{
+            // console.log(event);
+            // console.log(event.layerX)
+            // console.log(event.layerY)
+
+            alert(count);
+            count++;
+
+            if(count==3){
+                window.close();
+            }
+        })
+
+
+     </script>
+</body>
+</html>
