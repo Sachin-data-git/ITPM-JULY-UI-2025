@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        section{
+            height: 300px;
+            border: 1px solid red;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            background-color: green;
+
+            margin:100px;
+            width: 800px;
+        }
+        div{
+            height: 200px;
+            border: 1px solid red;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            width: 80%;
+            background-color: grey;
+        }
+        span{
+            height: 100px;
+            border: 1px solid red;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            width: 60%;
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+
+    
+       
+
+
+       <section>
+        <div>
+            <span>
+                <button>Open Modal</button>
+            </span>
+        </div>
+       </section>
+
+       <script>
+           
+        
+        
+
+
+      
+
+
+
+        let btn=document.querySelector("button");
+        btn.addEventListener("click",(event)=>{
+            event.stopImmediatePropagation();
+            alert("You clicked Button...")
+           
+        },false)
+
+        let span=document.querySelector("span");
+        span.addEventListener("click",()=>{
+           
+            alert("You clicked span...")
+        },false)
+        let div=document.querySelector("div");
+        div.addEventListener("click",()=>{
+            alert("You clicked div...")
+        },false)
+        let section=document.querySelector("section");
+        section.addEventListener("click",()=>{
+            alert("You clicked section...")
+        },false)
+        let body=document.querySelector("body");
+        body.addEventListener("click",()=>{
+            alert("You clicked body...")
+        },false)
+
+
+
+
+       </script>
+</body>
+</html>

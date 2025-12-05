@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <div id="parent">
+        <p id="demo">Lorem ipsum dolor sit amet 1.</p>
+        <p>Lorem ipsum dolor sit amet.2</p>
+        <p>Lorem ipsum dolor sit amet3.</p>
+        <p>Lorem ipsum dolor sit amet.4</p>
+        <p>Lorem ipsum dolor sit amet.5</p>
+    </div>
+
+    <script>
+           document.getElementById("parent").addEventListener("click",(event)=>{
+
+            if(event.target && event.target.nodeName=="P"){
+                // event.target.style.color="red";
+                event.target.style.opacity="0";
+                // event.target.style.display="none";
+            }
+
+            
+           
+           })
+
+    </script>
+    
+</body>
+</html>
