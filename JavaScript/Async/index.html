@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci asperiores at assumenda officia, voluptas minus distinctio repellat id autem corporis optio ipsa fugit labore. Recusandae ipsa aut cumque sit corrupti.</p>
+
+    <button>click</button>
+    <script>
+        // console.log("first")
+        // console.log(x);
+        // console.log("Second")
+        // console.log("Third")
+
+
+        // function first(){
+        //     console.log("first");
+        // }
+        // first();
+        
+
+        // function second(callback){
+        //     console.log("second");
+        //     callback();
+        // }
+        // second(third);
+
+        // console.log(x);
+
+
+        // function third(){
+        //     console.log("third");
+        // }
+
+
+        //  setTimeout(()=>{},timeout)
+        //  setInterval(()=>{},timeinterval)
+
+//callback fn
+        //  function credit(){
+        //       console.log("first");
+        // }
+
+        // //higher order function
+        // setTimeout(credit,5000)
+
+       
+        
+        // function debit(){
+        //     console.log("second");
+        // }
+        // setTimeout(debit,3000)
+         
+
+
+        //  function checkblc(){
+        //     console.log("third");
+        //  }
+        //  checkblc();
+
+
+ 
+        // let btn=document.querySelector("button");
+        // btn.addEventListener("click",()=>{changeColor("red")});
+
+        // function changeColor(x){
+        //     document.querySelector("p").style.color=x;
+        // }
+
+
+        
+        // function demo1(){
+        //     console.log("demo1")
+        // }
+        // function demo2(){
+        //     console.log("demo2")
+        // }
+
+
+        // setTimeout(()=>{demo1() +" " +demo2()},3000)
+
+        // setTimeout(() => {
+        //     document.writeln("hello")
+        // }, 1000);
+        
+        let interval=setInterval(() => {
+            document.writeln("hello")
+        }, 1000);
+
+        //clearInterval()
+       setTimeout(()=>{
+         clearInterval(interval);
+       },5000)
+
+
+
+    //    TASK
+    // Task 1 (Easy):
+    // Write a function greet that takes a name and a callback.
+    // The callback should print "Welcome!" after printing the name.
+
+    // Task 2 (Medium):
+    // Create a function fetchUser(callback) that waits 2 seconds, then returns a user object:
+    // code: { name: "John", age: 20 }
+    // Use callback to display the user.
+
+//     setTimeout Tasks
+// Task 3 (Easy):
+// Print "Hello after 3 seconds" using setTimeout.
+
+
+// Task 4 (Medium):
+// Create a countdown from 5 to 1, printing one number every second using repeated setTimeout.
+
+
+// Task 5 (Medium):
+// Create a <p> tag on the webpage that changes its text to:
+    // "Loading..."
+    // and after 3 seconds changes to:
+    // "Loaded!"
+
+    // Task 6 (Hard – UI Based):
+    // Create a button "Show Message"
+    // When clicked:
+    // immediately show "Please wait..."
+    // after 2 seconds → show "Task Completed!"
+
+    
+//     setInterval Tasks
+// Task 7 (Easy):
+// Display numbers from 1 to 10 using setInterval.
+// Stop the interval once it reaches 10
+
+
+
+// Task 8 (Medium – DOM):
+// Create a box whose background color changes every second using setInterval.
+
+// Task 9 (Hard):
+// Simulate traffic lights:
+// Red → 3 seconds
+// Yellow → 1 second
+// Green → 2 seconds
+// Cycle continues using setInterval or repeated setTimeout.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+          
+       
+        
+    </script>
+</body>
+</html>

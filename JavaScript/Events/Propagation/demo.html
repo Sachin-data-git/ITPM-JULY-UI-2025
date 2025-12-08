@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+      <ul>
+      <li>Items</li>
+      </ul>
+      <button id="btn">add Data</button>
+
+      <script>
+          
+          let parent=document.querySelector("ul");
+        
+
+        let btn=document.getElementById("btn");
+
+        btn.addEventListener("click",()=>{
+            let li=document.createElement("li");
+            let data=document.createTextNode("Item");
+              li.appendChild(data);
+
+            let newbtn=document.createElement("button");
+            let newText=document.createTextNode("delete");
+            newbtn.appendChild(newText);
+            
+            
+          
+            li.appendChild(newbtn)
+            console.log(li);
+
+            parent.appendChild(li);
+
+
+
+             li.addEventListener("click",(event)=>{
+              console.log(event.target);
+              console.log(event.target.nodeName);
+
+              if(event.target  && event.target.nodeName=="BUTTON" ){
+                li.style.opacity="0"
+              }
+
+        })
+
+        })
+
+
+         
+
+
+
+
+
+
+             
+
+
+
+
+
+
+      </script>
+</body>
+</html>
