@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+       <script>
+        // let p1=Promise.resolve("p1");
+        // let p2=Promise.resolve("p2");
+        // let p3=Promise.reject("p3");
+        // let p4=Promise.resolve("p4");
+
+
+        //all
+        // Promise.all([p1,p2,p3,p4]).then((n)=>{
+        //     console.log(n)
+        // }).catch(()=>{
+        //     console.log("Error");
+        // })
+
+        //allSettled
+        // Promise.allSettled([p1,p2,p3,p4]).then((n)=>{
+        //     console.log(n)
+        // }).catch(()=>{
+        //     console.log("Error");
+        // })
+
+
+
+        let s1= new Promise((resolve,reject)=>{
+            setTimeout(()=>{
+                resolve("First")
+            },3000)
+        })
+        let s2= new Promise((resolve,reject)=>{
+            setTimeout(()=>{
+               resolve("second")
+            },2000)
+        })
+        let s3= new Promise((resolve,reject)=>{
+            setTimeout(()=>{
+                reject("third")
+            },1000)
+        })
+
+        //race execute promise which is taking less time (resolve or reject)
+        // Promise.race([s1,s2,s3]).then((n)=>{
+        //     console.log(n)
+        // }).catch(()=>{
+        //     console.log("Rejected")
+        // })
+
+
+        //any execute resolved promise only which is taking less time 
+        Promise.any([s1,s2,s3]).then((n)=>{
+            console.log(n)
+        }).catch(()=>{
+            console.log("Rejected")
+        })
+       </script>
+</body>
+</html>
