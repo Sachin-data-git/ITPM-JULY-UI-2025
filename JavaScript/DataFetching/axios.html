@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+       <button onclick="fetchData()">fetchData</button>
+
+
+       <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.11.0/axios.min.js" referrerpolicy="no-referrer"></script>
+
+       <script>
+    //    async function fetchData(){
+    //         let obj={
+    //             url:https://jsonplaceholder.typicode.com/comments,
+    //             method:"GET"
+    //         }
+
+    //         // console.log(obj.method)
+
+    //         try{
+    //             let response=await axios.request(obj);
+    //             console.log(response.data);
+
+                
+    //             // response.data.map((n)=>{
+    //             //     // console.log(n.title);
+    //             //     document.writeln(n.title +"<br>");
+
+    //             // })
+    //         }catch(error){
+    //             //    console.log(error);
+    //                console.log(error.message);
+    //         }
+    //     }
+
+
+       async function fetchData(){
+            // let obj={
+            //     url:https://jsonplaceholder.typicode.com/comments,
+            //     method:"GET"
+            // }
+
+            // console.log(obj.method)
+
+            try{
+                // let response=await axios.request(obj);
+                let response=await axios.get("https://jsonplaceholder.typicode.com/comments");
+                console.log(response.data);
+
+                
+                // response.data.map((n)=>{
+                //     // console.log(n.title);
+                //     document.writeln(n.title +"<br>");
+
+                // })
+            }catch(error){
+                //    console.log(error);
+                   console.log(error.message);
+            }
+        }
+
+
+        // TASK
+        // 1)fetch all json placeholder data (album,todos,photos....) using fetch as well as axios method after the clicking on button
+        //2)use rapid api website free public api's and fetch the movies data and print that all data on document using map (use axios)
+        //3) print the movies data which is having rating below 8.5
+
+       </script>
+
+
+
+</body>
+</html>
