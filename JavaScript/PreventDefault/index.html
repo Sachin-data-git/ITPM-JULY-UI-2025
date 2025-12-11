@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <a href="https://organicindia.com/" style="pointer-events: none;">click</a> -->
+    <a href="https://organicindia.com/">click</a>
+
+
+    <hr><br>
+
+    <form action="" id="myform">
+        <input type="text" placeholder="Enter UserName">
+        <input type="submit" name="" id="">
+    </form>
+
+
+    <script>
+        
+        let link =document.querySelector("a");
+        link.addEventListener("click",(event)=>{
+                  event.preventDefault();
+                  console.log("single clicked...")
+        })
+
+        link.addEventListener("dblclick",()=>{
+            console.log("you doble clicked")
+            window.location="https://organicindia.com/"
+        })
+
+
+        document.addEventListener("contextmenu",(event)=>{
+            alert("right cliked")
+               event.preventDefault();
+        })
+
+
+
+    //   document.getElementById("myform").addEventListener("submit",(event)=>{
+    //      let username= document.querySelector("input").value;
+    //    if(!username){
+    //        alert("input data is required")
+    //        event.preventDefault();
+    //    }
+    //   })
+      document.querySelector("input").addEventListener("keydown",(event)=>{
+           
+        if(event.key=="Enter"){
+            event.preventDefault()
+        }
+      })
+
+
+
+
+    //   TASK
+   
+
+// 1)Form Submit Stop Task
+// Create a form with a text input and a submit button.
+// When the user clicks Submit, prevent form submission using preventDefault() and print the input value on console.
+
+// 2)Anchor Tag Behavior Stop
+// Create a link:
+// <a href="https://google.com">Go to Google</a>
+// When the user clicks, use preventDefault() so the page does not redirect.
+
+// 3)Right-click Disable
+// On right-click (contextmenu event), use preventDefault() to disable the context menu.
+
+// 4)Block “Enter Key” Default Behavior
+// Inside an input box, stop “Enter key” from submitting the form using preventDefault().
+
+// 5)Stop Page Reload on Form Submit
+// Create a login form.
+// Use preventDefault() to stop reload and show an alert:
+// "Form submitted but page not reloaded!".
+
+// 6)Stop Copying Text
+// Make a paragraph.
+// If someone tries to copy (copy event), use preventDefault() to block the copy action.
+
+// 7)Custom Validation Form
+// Create a form with email + password
+// If email is empty → use preventDefault()
+// Show a custom message "Email cannot be empty!"
+
+// 8)Detect double-click but stop default text selection
+// Add a double-click event on a paragraph
+// Use preventDefault() to prevent text getting selected.
+
+
+
+
+
+
+
+
+    </script>
+
+
+
+</body>
+</html>
