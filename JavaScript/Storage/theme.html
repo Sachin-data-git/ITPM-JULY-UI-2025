@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <style>
+        .dark{
+            background-color: black;
+            color: white;
+        }
+        .light{
+            background-color: rgb(255, 255, 255);
+            color: rgb(0, 0, 0);
+        }
+    </style>
+</head>
+<body>
+       <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit deleniti facere dolor laborum dolorem beatae! Ad accusantium quos, vero nemo, blanditiis quasi fuga nostrum, neque sunt quisquam tempora aperiam ipsum.</p>
+
+       <button>Change to dark</button>
+
+       <script>
+        let btn=document.querySelector("button");
+        let body=document.querySelector("body");
+
+        // btn.addEventListener("click",()=>{
+        //     body.classList.toggle("dark")
+        // })
+
+
+         
+
+        btn.addEventListener("click",()=>{
+            if(body.classList.contains("dark")){
+                body.classList.replace("dark","light");
+                localStorage.setItem("theme","dark");
+                
+                
+                
+            }
+            else{
+                
+                body.classList.replace("light","dark");
+                localStorage.setItem("theme","light");
+            }
+        })
+
+          let savetheme=localStorage.getItem("theme");
+        //    console.log(savetheme);
+
+        if(savetheme=="dark"){
+            body.classList.add("light")
+        }
+        else{
+            body.classList.add("dark")
+
+        }
+
+
+       </script>
+</body>
+</html>

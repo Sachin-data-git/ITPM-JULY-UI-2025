@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1 id="time"></h1>
+    <script>
+
+
+        setInterval(() => {
+            let cd = new Date();
+
+            // document.writeln(cd.getDate());
+            // document.writeln(cd.getDay());
+            let hr = cd.getHours();
+            let mn = cd.getMinutes();
+            let sc = cd.getSeconds();
+            document.getElementById("time").innerHTML = hr + ":" + mn + ":" + sc;
+            // sc++;
+        }, 1000)
+
+
+     const d = new Date("2004-10-17"); // January 15, 2025
+d.setDate(20);
+console.log(d);
+console.log(d.getDay()); //0
+
+
+    </script>
+</body>
+
+</html>
